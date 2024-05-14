@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Майнкрафт - тест на знания</title>
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<!-- Yandex Games SDK -->
+	<script src="https://yandex.ru/games/sdk/v2"></script>
+</head>
+<body>
+
+	<div class="health">
+		<img src="res/images/health.webp" id="health1">
+		<img src="res/images/health.webp" id="health2">
+		<img src="res/images/health.webp" id="health3">
+	</div>
+
+	<div class="buy" id="buy">
+		<h2>3 жизни за просмотр рекламы</h2>
+		<div class="b" onclick="buy_health()" style="margin-bottom: 6vh;">
+			<h3>Посмотреть рекламу</h3>
+		</div>
+		<div class="b" onclick="restart()">
+			<h3>Ещё раз</h3>
+		</div>
+	</div>
+
+	<div class="progress" id="progress">
+		<h6>Загрузка рекламы...</h6>
+	</div>
+
+	<div class="question_card" id="question_card">
+		<h1 id="question_text"></h1>
+
+		<img id="icon" src="" id="icon" width="35%" height="35%" style="display:none;">
+		<h3 id="name" style="display:none;">Вы прошли!</h3>
+		<div class="row" >
+			<h4 id="coin_" style="display:none; margin-bottom: 4vh;">Вы настоящий знаток майнкрафта</h4>
+		</div>
+
+		<div class="again" id="again" style="display:none;">
+			<h3>Пройти ещё раз</h3>
+		</div>
+	</div>
+
+	<table>
+        <tr>
+            <td><button><h2></h2></button></td>
+            <td><button><h2></h2></button></td>
+        </tr>
+        <tr>
+            <td><button><h2></h2></button></td>
+            <td><button><h2></h2></button></td>
+        </tr>
+    </table>
+
+    <!-- JS -->
+	<script type="text/javascript" src="script.js"></script>
+
+	<img id="hero1" src="res/images/hero_1.png">
+	<img id="hero2" src="res/images/hero_2.webp">
+	<img id="hero3" src="res/images/hero_5.png">
+</body>
+</html>
